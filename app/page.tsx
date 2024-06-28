@@ -126,15 +126,15 @@ export default function Home() {
             <Card key={userinfo.id}>  
               <CardContent className="border-solid border-2 border-black rounded-lg px-40 flex flex-wrap justify-between gap-40 pt-5">
                 
-                <p className="flex justify-between">{userinfo.task}</p>  
+                <p className="flex ">{userinfo.task}</p>  
 
-                <Button className="w-32" type="submit">
+                <Button className="w-40 bg-[#c0f8d0] text-black border-2 border-solid border-black rounded-lg" type="submit">
 
         
         <span>
-        <FaHeart className="fill-red-700" onClick={()=> handledislike(userinfo.id)}/>
+        <FaHeart className="fill-red-700 peer-last" onClick={()=> handledislike(userinfo.id)}/>
           </span>
-          Add Task
+          Mark as Completed
 
         </Button>
                 
